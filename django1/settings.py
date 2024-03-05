@@ -55,7 +55,7 @@ ROOT_URLCONF = 'django1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': ['templates'], # cada aplicação terá um templates
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
