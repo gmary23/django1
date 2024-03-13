@@ -1,33 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Django 1 - Contato</title>
+    <title>PRODUTOS</title>
 </head>
 <body>
-    <h1>Index</h1>
-    <h2>{{ curso }}</h2>
-    <h3>{{ outro }}</h3>
     <table border="1">
         <thead>
             <tr>
                 <th>Produto</th>
                 <th>Preço</th>
+                <th>Estoque</th>
                 
             </tr>
         </thead>
         <tbody>
-            {% for produto in variavelCriadaExemplo %}
             <tr>
-                <td><a href="{% url 'rotaproduto' produto.id %}"> {{ produto.nome }}</a></td>
+                <td><a href="{% url 'index' %}"> {{ produto.nome }}</a></td>
                 <td>{{ produto.preco }}</td>
+                <td>{{ produto.estoque }}</td>
             </tr>
-            {% endfor %}
         </tbody>
 
         
-    </table>
-    <!--<span>{{ logado}}</span>-->
+    </table>  
 </body>
 </html>
