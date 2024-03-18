@@ -123,4 +123,6 @@ STATIC_ROOT = Path(BASE_DIR, 'staticfiles') # usado durante a produção - Quand
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+LOGOUT_REDIRECT_URL = 'index' # quando o usuário saí do sistema redireciona para esse lugar
+
 
