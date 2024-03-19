@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-peo$+ow91si&0z&c*3sphz8kxgfy4=g)31jv%54ssmqf=83ujm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*'] # Aqui coloca o endereço que deve ser, qdo souber pode alterar e colocar no lugar do asterisco "*"
 
 
 # Application definition
